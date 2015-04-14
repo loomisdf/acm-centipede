@@ -1,10 +1,10 @@
 public class Sprite {
 	PImage playerImg;
-	int x;
-	int y;
-	int move_speed;
-	int sprite_width;
-	int sprite_height;
+	private	int x;
+	private int y;
+	private int move_speed;
+	private int sprite_width;
+	private int sprite_height;
 
 	boolean moveNorth, moveSouth, moveEast, moveWest;
 
@@ -15,6 +15,22 @@ public class Sprite {
 		this.sprite_height = sprite_height;
 		this.move_speed = move_speed;
 		playerImg = loadImage(filename);
+	}
+
+	public int getX() {
+		return x;
+	}
+
+	public int getY() {
+		return y;
+	}
+
+	public int getWidth() {
+		return sprite_width;
+	}
+
+	public int getHeight() {
+		return sprite_height;
 	}
 
 	public void draw() {
